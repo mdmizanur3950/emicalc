@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- Goggle Fonts Integration -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Loan Calculator</title>
+  </head>
+  <body>
+
+    <section class="main">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 mx-auto">
+            <div class="card card-body text-center mt-5">
+              <h2 class="heading display-5 pb-3">EMI Calculator</h2>
+              <form id="loan-form">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">$</span>
+                  </div>
+                  <input type="number" class="form-control" id="amount" placeholder="Loan Amount">
+                </div>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">%</span>
+                  </div>
+                  <input type="text" class="form-control" id="interest" placeholder="Percentage of interest per year">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="years" placeholder="Number of years to repay">
+                </div>
+                <div class="form-group">
+                  <input type="submit" value="Calculate" class="btn btn-info btn-submit">
+                </div>
+              </form>
+
+              <!-- Loader Here  -->
+
+              <div class="loading">
+                <img src="images/loader.gif" alt="Loading...">
+              </div>
+
+              <!-- Results -->
+
+              <div class="result mt-3 mb-3">
+                <h3 class="mb-3">Results</h3>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">Monthly Payment</span>
+                    </div>
+                    <input type="number" class="form-control" id="monthly-payment" disabled>
+                  </div>
+                  
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">Monthly Interest</span>
+                    </div>
+                    <input type="number" class="form-control" id="monthly-installment" disabled>
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">Total Interest</span>
+                    </div>
+                    <input type="number" class="form-control" id="total-interest" disabled>
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">Total Payment</span>
+                    </div>
+                    <input type="number" class="form-control" id="total-payment" disabled>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Our application js file -->
+    <script src="js/app.js"></script>
+  </body>
+</html>

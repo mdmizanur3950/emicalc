@@ -1,0 +1,41 @@
+body {
+  font-family: 'Manrope', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 700;
+}
+
+.main {
+  background:linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)), url(../images/gray-rocky-mountain-under-gray-sky-4215106.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.main .row {
+  height: 100vh;
+}
+
+.form-control {
+  border: 1px solid #17a2b8;
+}
+
+.input-group-text {
+  background: #17a2b8;
+  border: 1px solid #17a2b8;
+  color: #fff;
+}
+
+.form-control:focus {
+    border-color: none !important;
+    box-shadow: none !important;
+}
+
+.btn-info:focus {;
+    box-shadow: none !important;
+}
+
+.loading, .result {
+  display: none;
+}
